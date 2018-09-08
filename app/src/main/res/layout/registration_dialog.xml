@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/register_dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reg_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_title"
+                android:fontFamily="@font/jua_regular"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reg_edit_text_bg"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/reg_name"
+                android:fontFamily="@font/jua_regular"
+                android:inputType="text"
+                android:tag="name"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reg_edit_text_bg"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/reg_email"
+                android:fontFamily="@font/jua_regular"
+                android:inputType="textEmailAddress"
+                android:tag="email"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/reg_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reg_edit_text_bg"
+                android:drawableStart="@drawable/ic_user_name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/reg_user_name"
+                android:fontFamily="@font/jua_regular"
+                android:inputType="text"
+                android:tag="user_name"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/reg_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reg_edit_text_bg"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/reg_password"
+                android:fontFamily="@font/jua_regular"
+                android:inputType="textPassword"
+                android:tag="pass"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/reg_confirm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reg_edit_text_bg"
+                android:drawableStart="@drawable/ic_confirm_pass"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingEnd="20dp"
+                android:hint="@string/reg_confirm_pass"
+                android:fontFamily="@font/jua_regular"
+                android:inputType="textPassword"
+                android:tag="confirm_pass"
+                tools:ignore="RtlSymmetry" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/reg_user_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/blank_profile"/>
+
+                <ImageButton
+                    android:id="@+id/reg_take_photo_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignBottom="@+id/reg_user_image"
+                    android:src="@drawable/ic_camera_alt_white_24dp"
+                    android:background="#00ffffff"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:importantForAccessibility="no" />
+
+            </RelativeLayout>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/reg_done_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/reg_done"
+                android:fontFamily="@font/jua_regular"
+                app:initialCornerAngle="10dp"
+                app:spinning_bar_color="#000"
+                app:spinning_bar_padding="5dp"
+                app:spinning_bar_width="3dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/online_dialog_close_btn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:background="#00ffffff"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_close_red_24dp"
+        android:importantForAccessibility="no"/>
+
+</RelativeLayout>

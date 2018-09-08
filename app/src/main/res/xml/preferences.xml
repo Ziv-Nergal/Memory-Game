@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/single_player">
+
+        <ListPreference
+            android:title="Timer"
+            android:key="pref_key_single_player_time_limit"
+            android:summary="Select how many seconds per game"
+            android:entries="@array/preference_time_list_labels"
+            android:entryValues="@array/preference_time_list_values"
+            android:defaultValue="60000"
+            android:icon="@drawable/ic_watch_later_black_24dp"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Two Players">
+
+        <SwitchPreference
+            android:title="Vibration"
+            android:key="pref_key_vibration"
+            android:defaultValue="true"
+            android:summary="@string/vibrate_preference_summary"
+            android:icon="@drawable/ic_vibration_black_24dp"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Music And Sounds">
+
+        <SwitchPreference
+            android:title="Music"
+            android:key="pref_key_music"
+            android:defaultValue="true"
+            android:summary="Turn game music on/off"
+            android:icon="@drawable/ic_music_note_black_24dp"/>
+
+        <SwitchPreference
+            android:title="Sound FX"
+            android:key="pref_key_sound_fx"
+            android:defaultValue="true"
+            android:summary="Turn game sound effects on/off"
+            android:icon="@drawable/ic_volume_up_black_24dp"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

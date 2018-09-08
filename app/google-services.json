@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "13151986967",
+    "firebase_url": "https://memorygame-ef7bb.firebaseio.com",
+    "project_id": "memorygame-ef7bb",
+    "storage_bucket": "memorygame-ef7bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13151986967:android:6c7b157082b7d392",
+        "android_client_info": {
+          "package_name": "ZivNergal.MemoryGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13151986967-eccjcp2hc5grjpnb8dr6fispb2p658sa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ZivNergal.MemoryGame",
+            "certificate_hash": "d5ecef97279e547ea933d23d5ea27b204526aa33"
+          }
+        },
+        {
+          "client_id": "13151986967-dfd3pnr0bbak7vr2dpkdr23ghnrtf4rf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ZivNergal.MemoryGame",
+            "certificate_hash": "7ab40af2302ae92f7d1f2cf1ad7931c9248395e5"
+          }
+        },
+        {
+          "client_id": "13151986967-t6hm8988t6j9vj7lrmt9tvgfg2dvg92d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBrJn6PJXN4nZbLsY7ZuTWax-q_WnX33c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13151986967-t6hm8988t6j9vj7lrmt9tvgfg2dvg92d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

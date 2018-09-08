@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <integer name="num_of_themes">7</integer>
+
+    <integer name="num_of_cards">20</integer>
+
+    <array name="cards_array">
+
+        <item>@drawable/card1</item>
+        <item>@drawable/card2</item>
+        <item>@drawable/card3</item>
+        <item>@drawable/card4</item>
+        <item>@drawable/card5</item>
+        <item>@drawable/card6</item>
+        <item>@drawable/card7</item>
+
+    </array>
+
+    <array name="animal_array">
+
+        <item>@drawable/animal_card_1</item>
+        <item>@drawable/animal_card_2</item>
+        <item>@drawable/animal_card_3</item>
+        <item>@drawable/animal_card_4</item>
+        <item>@drawable/animal_card_5</item>
+        <item>@drawable/animal_card_6</item>
+        <item>@drawable/animal_card_7</item>
+        <item>@drawable/animal_card_8</item>
+        <item>@drawable/animal_card_9</item>
+        <item>@drawable/animal_card_10</item>
+        <item>@drawable/animal_card_1</item>
+        <item>@drawable/animal_card_2</item>
+        <item>@drawable/animal_card_3</item>
+        <item>@drawable/animal_card_4</item>
+        <item>@drawable/animal_card_5</item>
+        <item>@drawable/animal_card_6</item>
+        <item>@drawable/animal_card_7</item>
+        <item>@drawable/animal_card_8</item>
+        <item>@drawable/animal_card_9</item>
+        <item>@drawable/animal_card_10</item>
+
+    </array>
+
+    <array name="spongebob_array">
+
+        <item>@drawable/spongebob_card_1</item>
+        <item>@drawable/spongebob_card_2</item>
+        <item>@drawable/spongebob_card_3</item>
+        <item>@drawable/spongebob_card_4</item>
+        <item>@drawable/spongebob_card_5</item>
+        <item>@drawable/spongebob_card_6</item>
+        <item>@drawable/spongebob_card_7</item>
+        <item>@drawable/spongebob_card_8</item>
+        <item>@drawable/spongebob_card_9</item>
+        <item>@drawable/spongebob_card_10</item>
+        <item>@drawable/spongebob_card_1</item>
+        <item>@drawable/spongebob_card_2</item>
+        <item>@drawable/spongebob_card_3</item>
+        <item>@drawable/spongebob_card_4</item>
+        <item>@drawable/spongebob_card_5</item>
+        <item>@drawable/spongebob_card_6</item>
+        <item>@drawable/spongebob_card_7</item>
+        <item>@drawable/spongebob_card_8</item>
+        <item>@drawable/spongebob_card_9</item>
+        <item>@drawable/spongebob_card_10</item>
+
+    </array>
+
+    <array name="family_guy_array">
+
+        <item>@drawable/family_guy_card_1</item>
+        <item>@drawable/family_guy_card_2</item>
+        <item>@drawable/family_guy_card_3</item>
+        <item>@drawable/family_guy_card_4</item>
+        <item>@drawable/family_guy_card_5</item>
+        <item>@drawable/family_guy_card_6</item>
+        <item>@drawable/family_guy_card_7</item>
+        <item>@drawable/family_guy_card_8</item>
+        <item>@drawable/family_guy_card_9</item>
+        <item>@drawable/family_guy_card_10</item>
+        <item>@drawable/family_guy_card_1</item>
+        <item>@drawable/family_guy_card_2</item>
+        <item>@drawable/family_guy_card_3</item>
+        <item>@drawable/family_guy_card_4</item>
+        <item>@drawable/family_guy_card_5</item>
+        <item>@drawable/family_guy_card_6</item>
+        <item>@drawable/family_guy_card_7</item>
+        <item>@drawable/family_guy_card_8</item>
+        <item>@drawable/family_guy_card_9</item>
+        <item>@drawable/family_guy_card_10</item>
+
+    </array>
+
+    <array name="rick_morty_array">
+
+        <item>@drawable/rick_morty_card_1</item>
+        <item>@drawable/rick_morty_card_2</item>
+        <item>@drawable/rick_morty_card_3</item>
+        <item>@drawable/rick_morty_card_4</item>
+        <item>@drawable/rick_morty_card_5</item>
+        <item>@drawable/rick_morty_card_6</item>
+        <item>@drawable/rick_morty_card_7</item>
+        <item>@drawable/rick_morty_card_8</item>
+        <item>@drawable/rick_morty_card_9</item>
+        <item>@drawable/rick_morty_card_10</item>
+        <item>@drawable/rick_morty_card_1</item>
+        <item>@drawable/rick_morty_card_2</item>
+        <item>@drawable/rick_morty_card_3</item>
+        <item>@drawable/rick_morty_card_4</item>
+        <item>@drawable/rick_morty_card_5</item>
+        <item>@drawable/rick_morty_card_6</item>
+        <item>@drawable/rick_morty_card_7</item>
+        <item>@drawable/rick_morty_card_8</item>
+        <item>@drawable/rick_morty_card_9</item>
+        <item>@drawable/rick_morty_card_10</item>
+
+    </array>
+
+    <array name="southpark_array">
+
+        <item>@drawable/southpark_card_1</item>
+        <item>@drawable/southpark_card_2</item>
+        <item>@drawable/southpark_card_3</item>
+        <item>@drawable/southpark_card_4</item>
+        <item>@drawable/southpark_card_5</item>
+        <item>@drawable/southpark_card_6</item>
+        <item>@drawable/southpark_card_7</item>
+        <item>@drawable/southpark_card_8</item>
+        <item>@drawable/southpark_card_9</item>
+        <item>@drawable/southpark_card_10</item>
+        <item>@drawable/southpark_card_1</item>
+        <item>@drawable/southpark_card_2</item>
+        <item>@drawable/southpark_card_3</item>
+        <item>@drawable/southpark_card_4</item>
+        <item>@drawable/southpark_card_5</item>
+        <item>@drawable/southpark_card_6</item>
+        <item>@drawable/southpark_card_7</item>
+        <item>@drawable/southpark_card_8</item>
+        <item>@drawable/southpark_card_9</item>
+        <item>@drawable/southpark_card_10</item>
+
+    </array>
+
+    <array name="simpsons_array">
+
+        <item>@drawable/simpsons_card_1</item>
+        <item>@drawable/simpsons_card_2</item>
+        <item>@drawable/simpsons_card_3</item>
+        <item>@drawable/simpsons_card_4</item>
+        <item>@drawable/simpsons_card_5</item>
+        <item>@drawable/simpsons_card_6</item>
+        <item>@drawable/simpsons_card_7</item>
+        <item>@drawable/simpsons_card_8</item>
+        <item>@drawable/simpsons_card_9</item>
+        <item>@drawable/simpsons_card_10</item>
+        <item>@drawable/simpsons_card_1</item>
+        <item>@drawable/simpsons_card_2</item>
+        <item>@drawable/simpsons_card_3</item>
+        <item>@drawable/simpsons_card_4</item>
+        <item>@drawable/simpsons_card_5</item>
+        <item>@drawable/simpsons_card_6</item>
+        <item>@drawable/simpsons_card_7</item>
+        <item>@drawable/simpsons_card_8</item>
+        <item>@drawable/simpsons_card_9</item>
+        <item>@drawable/simpsons_card_10</item>
+
+    </array>
+
+    <array name="bojack_horseman_array">
+
+        <item>@drawable/bojack_horseman_card_1</item>
+        <item>@drawable/bojack_horseman_card_2</item>
+        <item>@drawable/bojack_horseman_card_3</item>
+        <item>@drawable/bojack_horseman_card_4</item>
+        <item>@drawable/bojack_horseman_card_5</item>
+        <item>@drawable/bojack_horseman_card_6</item>
+        <item>@drawable/bojack_horseman_card_7</item>
+        <item>@drawable/bojack_horseman_card_8</item>
+        <item>@drawable/bojack_horseman_card_9</item>
+        <item>@drawable/bojack_horseman_card_10</item>
+        <item>@drawable/bojack_horseman_card_1</item>
+        <item>@drawable/bojack_horseman_card_2</item>
+        <item>@drawable/bojack_horseman_card_3</item>
+        <item>@drawable/bojack_horseman_card_4</item>
+        <item>@drawable/bojack_horseman_card_5</item>
+        <item>@drawable/bojack_horseman_card_6</item>
+        <item>@drawable/bojack_horseman_card_7</item>
+        <item>@drawable/bojack_horseman_card_8</item>
+        <item>@drawable/bojack_horseman_card_9</item>
+        <item>@drawable/bojack_horseman_card_10</item>
+
+    </array>
+
+</resources>

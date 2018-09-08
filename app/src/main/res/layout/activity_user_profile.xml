@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfecfe"
+    tools:context=".ProfileActivity">
+
+    <!-- Card Snowflakes -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="180"
+            app:snowflakeAlphaMin="120"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/card1"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="15dp"
+            app:snowflakeSpeedMax="8"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="true"
+            app:snowflakesNum="4" />
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="180"
+            app:snowflakeAlphaMin="120"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/card2"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="15dp"
+            app:snowflakeSpeedMax="8"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="true"
+            app:snowflakesNum="4" />
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="180"
+            app:snowflakeAlphaMin="120"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/card3"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="15dp"
+            app:snowflakeSpeedMax="8"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="true"
+            app:snowflakesNum="4" />
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="180"
+            app:snowflakeAlphaMin="120"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/card4"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="15dp"
+            app:snowflakeSpeedMax="8"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="true"
+            app:snowflakesNum="4" />
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="180"
+            app:snowflakeAlphaMin="120"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/card5"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="15dp"
+            app:snowflakeSpeedMax="8"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="true"
+            app:snowflakesNum="4" />
+
+        <com.jetradarmobile.snowfall.SnowfallView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:snowflakeAlphaMax="180"
+            app:snowflakeAlphaMin="120"
+            app:snowflakeAngleMax="5"
+            app:snowflakeImage="@drawable/card6"
+            app:snowflakeSizeMax="30dp"
+            app:snowflakeSizeMin="15dp"
+            app:snowflakeSpeedMax="8"
+            app:snowflakeSpeedMin="4"
+            app:snowflakesAlreadyFalling="true"
+            app:snowflakesNum="4" />
+
+    </RelativeLayout>
+    <!-- Card Snowflakes -->
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#626e9b">
+
+        <ImageButton
+            android:id="@+id/profile_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:background="@color/transparent"
+            android:importantForAccessibility="no"
+            android:onClick="BackBtnClick"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_user_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/blank_profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/black"
+            android:transitionName="@string/profile_transition"
+            tools:ignore="UnusedAttribute"
+            android:onClick="ProfilePicBtnClick"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@color/black"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/profile_email"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="321dp"
+        app:layout_constraintBottom_toTopOf="@id/profile_email"/>
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/profile_text_view_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="@string/reg_email"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_image_view"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/profile_name"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="321dp"
+        app:layout_constraintBottom_toTopOf="@id/profile_name" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/profile_text_view_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:drawableEnd="@drawable/ic_edit"
+        android:text="@string/reg_name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email"
+        tools:ignore="RtlSymmetry"
+        android:onClick="ChangeNameBtnCLick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/profile_display_name"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="321dp"
+        app:layout_constraintBottom_toTopOf="@id/profile_display_name" />
+
+    <TextView
+        android:id="@+id/profile_display_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/profile_text_view_bg"
+        android:drawableEnd="@drawable/ic_edit"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="@string/display_name"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name"
+        tools:ignore="RtlSymmetry"
+        android:onClick="ChangeDisplayNameBtnClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_bg"
+        android:drawableStart="@drawable/ic_camera_alt_white_24dp"
+        android:drawablePadding="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="10dp"
+        android:text="@string/change_profile_pic"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_display_name"
+        android:onClick="ChangeProfilePicBtnClick"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

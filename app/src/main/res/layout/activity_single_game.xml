@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_game_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingBottom="5dp"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:paddingTop="8dp"
+    tools:context=".SingleGameActivity">
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        android:importantForAccessibility="no"
+        android:onClick="LeaveGameBtnClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_chevron_left_black_24dp" />
+
+    <TextView
+        android:id="@+id/single_game_ready_set_go_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:textSize="60sp"
+        android:fontFamily="@font/jua_regular"
+        android:visibility="invisible"
+        android:text="@string/ready"
+        app:layout_constraintBottom_toTopOf="@+id/single_game_table_layout"
+        app:layout_constraintEnd_toEndOf="@+id/single_game_timer_layout"
+        app:layout_constraintStart_toStartOf="@+id/single_game_timer_layout"
+        app:layout_constraintTop_toTopOf="@+id/single_game_timer_layout" />
+
+    <LinearLayout
+        android:id="@+id/single_game_user_details_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/single_game_player_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:src="@drawable/blank_profile"
+            android:transitionName="@string/profile_transition"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/single_game_player_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/single_game_timer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/single_game_table_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/single_game_user_details_layout">
+
+        <TextView
+            android:id="@+id/single_game_timer_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:text="@string/time_left"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/single_game_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!--Cards Layout-->
+    <TableLayout
+        android:id="@+id/single_game_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/single_game_row1"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/card1"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/card2"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/card3"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="2" />
+
+            <ImageView
+                android:id="@+id/card4"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="3" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/single_game_row2"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/card5"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/card6"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="5" />
+
+            <ImageView
+                android:id="@+id/card7"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/card8"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="7" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/single_game_row3"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/card9"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="8" />
+
+            <ImageView
+                android:id="@+id/card10"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="9" />
+
+            <ImageView
+                android:id="@+id/card11"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="10" />
+
+            <ImageView
+                android:id="@+id/card12"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="11" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/single_game_row4"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/card13"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="12" />
+
+            <ImageView
+                android:id="@+id/card14"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="13" />
+
+            <ImageView
+                android:id="@+id/card15"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="14" />
+
+            <ImageView
+                android:id="@+id/card16"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="15" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/single_game_row5"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/card17"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="16" />
+
+            <ImageView
+                android:id="@+id/card18"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="17" />
+
+            <ImageView
+                android:id="@+id/card19"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="18" />
+
+            <ImageView
+                android:id="@+id/card20"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card1"
+                android:tag="19" />
+
+        </TableRow>
+
+    </TableLayout>
+    <!--Cards Layout-->
+
+</android.support.constraint.ConstraintLayout>

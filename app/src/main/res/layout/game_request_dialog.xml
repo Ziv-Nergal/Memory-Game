@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="20dp"
+    android:background="@drawable/online_users_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/jua_regular"
+        android:text="@string/new_game_request"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/game_request_dialog_user_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        android:src="@drawable/blank_profile"/>
+
+    <TextView
+        android:id="@+id/game_request_dialog_user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/jua_regular"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="@string/user_name"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/game_request_dialog_decline_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_gravity="center"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/red"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/decline" />
+
+        <Button
+            android:id="@+id/game_request_dialog_accept_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="@color/green"
+            android:layout_gravity="end"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/accept" />
+
+    </LinearLayout>
+
+</LinearLayout>

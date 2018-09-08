@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Memory Game</string>
+    <string name="app_logo">App Logo</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="no_user">Don\'t Have A User?</string>
+    <string name="create_new_user">Create A New One!</string>
+    <string name="login">Login</string>
+    <string name="reg_title">Sign Up Once To Get Started!</string>
+    <string name="reg_name">Name</string>
+    <string name="reg_email">Email Address</string>
+    <string name="reg_user_name">User Name</string>
+    <string name="reg_password">Password</string>
+    <string name="reg_confirm_pass">Confirm Password</string>
+    <string name="reg_done">Done!</string>
+    <string name="try_again">Try Again</string>
+    <string name="animals">Animals</string>
+    <string name="spongebob">SpongeBob</string>
+    <string name="family_guy">Family Guy</string>
+    <string name="rick_morty"><![CDATA[Rick & Morty]]></string>
+    <string name="the_simpsons">The Simpsons</string>
+    <string name="southpark">SouthPark</string>
+    <string name="choose_theme">Choose Theme</string>
+    <string name="challenge_a_friend">Challenge A Friend</string>
+    <string name="single_player">Single Player</string>
+    <string name="settings">Settings</string>
+    <string name="see_who_is_online">See Who\'s Online</string>
+    <string name="send_game_request">Send Game Request!</string>
+    <string name="log_out">Logout</string>
+    <string name="profile_transition">profile_image_transition</string>
+    <string name="display_name">Display Name</string>
+    <string name="change_profile_pic">Change Profile Picture</string>
+    <string name="profile_name">Name:</string>
+    <string name="profile_email">Email Address:</string>
+    <string name="profile_display_name">Display Name:</string>
+    <string name="btn_transitions">buttons_transitions</string>
+    <string name="cards_transition">cards_transition</string>
+    <string name="time_left">Time Left</string>
+    <string name="time">00:00</string>
+    <string name="leave_game_dialog_message">Are you sure you want to leave game?</string>
+    <string name="positive_dialog_btn">Yes</string>
+    <string name="negative_dialog_btn">No</string>
+    <string name="game_over_dialog_win_title">You Won!</string>
+    <string name="game_over_dialog_lose_title">Game Over!</string>
+    <string name="game_over_dialog_msg">Play Again?</string>
+    <string name="game_over_dialog_pos_btn">Yes</string>
+    <string name="game_over_dialog_neg_btn">No</string>
+    <string name="game_settings">Game Settings</string>
+    <string name="ready">Ready?</string>
+    <string name="set">Set…</string>
+    <string name="go">Go!</string>
+    <string name="logout_dialog_msg">Are tou sure you want to log out?</string>
+    <string name="music_service_disconnected">MusicService Disconnected</string>
+    <string name="change_name">Enter new name</string>
+    <string name="new_display_name">Enter new display name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="game_request_channel_name">game_request_channel_name</string>
+    <string name="game_requests">game_requests</string>
+    <string name="new_game_request">New Game Request!</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="points">Points:</string>
+    <string name="tie">It\'s a tie! see you soon…</string>
+    <string name="waiting_for_your_friends_move">waiting for your friend\'s move…</string>
+    <string name="bojack_horseman">Bojack Horseman</string>
+    <string name="loading">Loading...</string>
+    <string name="vibrate_preference_summary">Vibrate when your friend makes a move</string>
+
+    <string-array name="preference_time_list_labels">
+
+        <item>Test Only</item>
+        <item>00:45</item>
+        <item>01:00</item>
+        <item>01:25</item>
+        <item>01:30</item>
+        <item>01:45</item>
+        <item>02:00</item>
+
+    </string-array>
+
+    <string-array name="preference_time_list_values">
+
+        <item>10000</item>
+        <item>45000</item>
+        <item>60000</item>
+        <item>75000</item>
+        <item>90000</item>
+        <item>105000</item>
+        <item>120000</item>
+
+    </string-array>
+
+</resources>

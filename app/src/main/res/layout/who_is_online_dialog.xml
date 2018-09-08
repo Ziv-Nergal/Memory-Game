@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/online_users_dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ProgressBar
+        android:id="@+id/online_dialog_progress_bar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"/>
+
+    <LinearLayout
+        android:id="@+id/online_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageButton
+            android:id="@+id/online_dialog_close_btn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="#00ffffff"
+            android:scaleType="fitXY"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_close_red_24dp"
+            android:importantForAccessibility="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="@string/see_who_is_online"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/users_list"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" />
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/online_dialog_send_friend_request"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/send_game_request"
+            android:textSize="12sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp"
+            app:initialCornerAngle="20dp"
+            app:spinning_bar_color="#000"
+            app:spinning_bar_padding="5dp"
+            app:spinning_bar_width="3dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
