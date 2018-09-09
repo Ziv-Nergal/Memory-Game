@@ -17,5 +17,7 @@ The user can control sound, music, and vibration through the settings menu.
 The main tool I used for this app is Google's Firebase for registering new users to the app, Saving their info,
 And for the online session game.
 
+Also, I used Node.js in order to send push notifications of game requests between devices when app in in background or in forground.
+
 I know that using Firebase for the online feature is probably not the best way but I used 
 the tools that I know so far to make this app work.
