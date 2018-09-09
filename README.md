@@ -1,4 +1,4 @@
-# Memory-Game-Git
+# Memory-Game
 
 This is  a classic memory card game that includes offline&online modes,
 It lets the user play by himself with the option to set the time for each game, or he can challenge a friend to 
